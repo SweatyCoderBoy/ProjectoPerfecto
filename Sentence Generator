@@ -1,0 +1,30 @@
+import random
+import turtle
+import time as sleep
+turtle.penup()
+
+beginning_list = ('You' , 'We' , 'I' , 'It' , 'You guys' , 'They')
+
+first_word = random.choice(beginning_list)
+
+middle_phrase = 'are' if first_word in ['You' , 'We' , 'You guys' , 'They'] else ('am' if first_word == 'I' else 'is')
+
+verb = ('riding' , 'catching' , 'killing' , 'blowing raspberry at' , 'destroying' , 'building' , 'sitting on' , 'eating' , 'attacking' , 'babysitting' , 'coding' , 'learning' , 'amazed by the' , 'stealing' , 'grabbing' , 'smelling' , 'lifting' , 'drinking')
+
+adjective = ('purple' , 'cautious' , 'ugly' , 'stupid' , 'retarded' , 'funny' , 'hilarious' , 'strange' , 'weird' , 'green' , 'rainbow' , 'yellow' , 'left-handed' , 'annoying' , 'scary' , 'gruesome' , 'artistic' , 'angry' , 'lame' , 'disabled' , 'stinky')
+
+noun = ('cakes.' , 'dinosaurs.' , 'ducks.' , 'boys.' , 'girls.' , 'hearts.' , 'monkeys.' , 'silverware.' , 'potatoes.' , 'brussel sprouts.' , 'Fortnite grinders.' , 'babies.' ,  'cars.' , 'guns.' , 'coins.' , 'clocks.' , 'planets.' , 'dogs.' , 'cats.' , 'teachers.' , 'water.')
+#You can add more word options at will
+
+turtle.left(270)
+turtle.write(first_word)
+turtle.forward(20)
+turtle.write(middle_phrase)
+turtle.forward(20)
+turtle.write(random.choice(verb))
+turtle.forward(20)
+turtle.write(random.choice(adjective))
+turtle.forward(20)
+turtle.write(random.choice(noun))
+turtle.forward(20)
+sleep.sleep(3)
